@@ -1,7 +1,8 @@
 import { createContext, ReactNode, useReducer } from "react";
+import { AppContextModel } from "../models/context";
 import { reducer } from "../reducers/appReducer";
 
-export const AppContext = createContext({});
+export const AppContext = createContext({} as AppContextModel);
 
 type Props = {
   children: ReactNode;
